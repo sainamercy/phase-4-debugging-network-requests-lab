@@ -63,11 +63,21 @@ developing your own process.
 - Add a new toy when the toy form is submitted
 
   - How I debugged:
+  #used network tab for the error.
+  Error message: uninitialized constant ToysController::Toys
+  Fix: corrected Toys to Toy class in ToysController#create
 
 - Update the number of likes for a toy
 
   - How I debugged:
+#used console tab.
+Error: Unexpected end of JSON input, which means it's an error that occurs when JavaScript is parsing our code, we expect the server to return a string of JSON-formatted data.
+Fix: return json data ToysController#update
+
 
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+  #used network tab
+  Error: status: not found, ActionController::RoutingError: No route matches [DELETE]
+  Fix: added destroy to routes.
